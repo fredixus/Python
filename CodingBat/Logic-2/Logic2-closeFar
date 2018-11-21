@@ -1,0 +1,8 @@
+#Given three ints, a b c, return True if one of b or c is "close" (differing from a by at most 1), while the other is "far", differing from both other values by 2 or more. Note: abs(num) computes the absolute value of a number
+def close_far(a, b, c):
+  a_b_min = abs(a-b)
+  a_c_min = abs(a-c)
+  b_c_min = abs(b-c)
+  
+  return (a_b_min<=1 and a_c_min>=2 and b_c_min>=2) or \
+  (a_c_min<=1 and a_b_min>=2 and b_c_min>=2)
