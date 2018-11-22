@@ -1,0 +1,13 @@
+#Given two strings, return True if either of the strings appears at the very end of the other string, ignoring upper/lower case differences (in other words, the computation should not be "case sensitive"). Note: s.lower() returns the lowercase version of a string
+def end_other(a, b):
+  lenA = len(a)
+  lenB = len(b)
+  
+  if lenA>lenB:
+    return a[lenA-lenB:].lower()==b[:].lower()
+  elif lenA<lenB:
+    return a[:].lower()==b[lenB-lenA:].lower()
+  elif lenA==lenB:
+    return a[:].lower()==b[:].lower()
+  else:
+    return False
