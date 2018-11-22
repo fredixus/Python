@@ -1,0 +1,12 @@
+#Return True if the string "cat" and "dog" appear the same number of times in the given string
+
+def cat_dog(str):
+  cDog = 0
+  cCat = 0
+  
+  for x in range(len(str)):
+    if str[x:x+3]=="dog":cDog+=1
+    if str[x:x+3]=="cat":cCat+=1
+    
+  if cDog==cCat: return True
+  else: return False
