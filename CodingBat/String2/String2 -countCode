@@ -1,0 +1,16 @@
+#Return the number of times that the string "code" appears anywhere in the given string, except we'll accept any letter for the 'd', so "cope" and "cooe" count
+
+def count_code(str):
+  leng = len(str)
+  i = 0
+  c = 0
+  while i<leng-3:
+
+    if str[i]=="c" and str[i+1]=="o" and str[i+3]=="e":
+      c+=1
+      
+    if i==(leng-4): break
+    
+    i+=1
+
+  return c
