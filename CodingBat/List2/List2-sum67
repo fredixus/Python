@@ -1,0 +1,38 @@
+#Return the sum of the numbers in the array, except ignore sections of numbers starting with a 6 and extending to the next 7 (every 6 will be followed by at least one 7). Return 0 for no numbers
+
+def sum67(nums):
+  x = 0; sum = 0;six=False;seven=False;index6=0;index7=0;listA=[];listB=[]
+  if len(nums) == 0: return 0 
+  while x < len(nums):
+    if (nums[x]==6 and six==False):
+      six=True
+      index6=x
+    if (nums[x]==7 and seven==False and six==True):
+      seven=True
+      index7=x
+    x+=1
+  if (seven==True and six==True):
+    listA = nums[:index6]
+    listB = nums[index7+1:]
+    nums = listA + listB
+  
+  x = 0; sum = 0;six=False;seven=False;index6=0;index7=0;listA=[];listB=[]  
+  while x < len(nums):
+    if (nums[x]==6 and six==False):
+      six=True
+      index6=x
+    if (nums[x]==7 and seven==False and six==True):
+      seven=True
+      index7=x
+    x+=1
+    
+  if (seven==True and six==True):
+    listA = nums[:index6]
+    listB = nums[index7+1:]
+    nums = listA + listB
+    
+  z = 0
+  while z < len(nums):
+      sum+=nums[z]
+      z+=1
+  return sum
