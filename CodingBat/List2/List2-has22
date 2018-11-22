@@ -1,1 +1,10 @@
 #Given an array of ints, return True if the array contains a 2 next to a 2 somewhere
+def has22(nums):
+  z = [2,2]
+  x =0;isTrue=False
+  while x < (len(nums)):
+    if  nums[x:x+2]==z:
+      isTrue = True
+      return True
+    x+=1
+  if isTrue == False: return False 
