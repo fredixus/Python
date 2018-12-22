@@ -1,4 +1,4 @@
-#Lab Instructions
+#Lab Instructions - https://gist.github.com/fredixus/5abe9005a6d5e65ec819987d5cfb1787
 """
 How do I run Python?
 You can use the CC Labs environment to run Python code in Jupyter notebooks, by simply clicking on the "Start Lab" button below.
