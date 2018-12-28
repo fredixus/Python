@@ -23,3 +23,11 @@ while(y!= x):
 (*) 1,2 
 () 0,1 
 () 0
+"""
+
+#Labs
+#https://gist.github.com/dd04eca0b0e9857721dc18019a179083
+
+squares=['red','yellow','green','purple','blue ']
+for i,square in enumerate(squares):
+    print(i,square)
