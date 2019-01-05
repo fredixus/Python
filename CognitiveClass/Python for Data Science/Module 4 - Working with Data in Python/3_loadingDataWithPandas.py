@@ -43,3 +43,26 @@ df = pandas.read_excel(xlsx_path)
 
 songs = {'Album':['A','B','C','D'],'Number':[1,2,3,4],'Autor':['Adam','Banan','Cion','Dion']}
 songs_F = pandas.DataFrame(songs)
+
+print(songs_F["Album"])
+
+print(songs_F[["Album",'Autor']])
+
+#first row and column:
+print(songs_F.ix[0,0])
+
+#secound row and first column:
+print(songs_F.ix[1,0])
+
+#first row and third column:
+print(songs_F.ix[0,2])
+
+#first row and column "Number":
+print(songs_F.ix[0,"Number"])
+
+#third row and column "Number":
+print(songs_F.ix[2,"Number"])
+
+# assign to variable 2 rows and 3 columns
+z = songs_F.ix[0:2,0:3]
+
