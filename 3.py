@@ -1,5 +1,5 @@
 #Wizualizacja
-print("Wizualizacja 2")
+print("Wizualizacja 3")
 from matplotlib import pyplot as plt
 from collections import Counter
 
