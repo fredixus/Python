@@ -9,4 +9,4 @@ gdp = [300.2,543.3,1075.9,2862.5,5979.6,10289.7,14958.3]
 plt.plot(years,gdp, color='green', marker='o',linestyle='solid')
 plt.title("Nominalny PKB")
 plt.ylabel("Mld dol.")
-plt.show() 
+plt.show()
