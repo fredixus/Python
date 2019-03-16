@@ -13,9 +13,9 @@ def vector_sum(vectors):
         result = vector_add(result,vector)
     return result
 
-a = [1,2] 
-b = [3,2]
-c = [1,1]
+# a = [1,2] 
+# b = [3,2]
+# c = [1,1]
 
-sum = [a]+[b]+[c]
-print(vector_sum(sum))
+# sum = [a]+[b]+[c]
+# print(vector_sum(sum))
