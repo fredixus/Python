@@ -7,7 +7,7 @@ def vector_sub(v, w):
     """(-)"""
     return [v_i - w_i for v_i, w_i in zip(v,w)]
 
-a = [1,2] 
-b = [3,2]
+# a = [1,2] 
+# b = [3,2]
 
-print(vector_add(a,b))
+# print(vector_sub(a,b))
