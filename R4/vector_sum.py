@@ -13,6 +13,9 @@ def vector_sum(vectors):
         result = vector_add(result,vector)
     return result
 
+def vector_Sum(vectors):
+    return reduce(vector_add, vectors)
+
 # a = [1,2] 
 # b = [3,2]
 # c = [1,1]
