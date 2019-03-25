@@ -1,4 +1,4 @@
-"""
+﻿"""
 Statistic
 """
 from collections import Counter
@@ -73,7 +73,7 @@ def data_range(x):
 print(data_range(num_friends))
 
 def de_mean(x):
-    """Przekszta?ca x poprzez odj?cie ?redniej """
+    """Przekształca x poprzez odjęcie średniej """
     x_bar = mean(x)
     return [x_i - x_bar for x_i in x] 
 
@@ -84,7 +84,7 @@ def sum_of_squers(v):
     return vector_dot(v,v)
 
 def variance(x):
-    """Zak?ada ?e x ma przynajmniej dwa elementy"""
+    """Zakłada że x ma przynajmniej dwa elementy"""
     n = len(x) 
     if n < 2: return -1
     else:
@@ -102,3 +102,7 @@ def interquartile_range(x):
     return quantile(x,0.75) - quantile(x,0.25)
 
 print(interquartile_range(num_friends))
+
+"""
+Kowariancja mierzy jak dwie zmienne różnia się od swoich średnich
+"""
