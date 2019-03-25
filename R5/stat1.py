@@ -17,12 +17,12 @@ def make_friend_counts_histogram(num_friends):
     friend_counts   = Counter(num_friends)
     xs              = range(101)
     ys              = [friend_counts[x] for x in xs]
-    plt.bar(xs, ys)
-    plt.axis([0,101,0,25])
-    plt.title("Histogram of Friend Counts")
-    plt.xlabel("# of friends")
-    plt.ylabel("# of people")
-    plt.show()
+    plt.bar     (xs, ys)
+    plt.axis    ([0,101,0,25])
+    plt.title   ("Histogram of Friend Counts")
+    plt.xlabel  ("# of friends")
+    plt.ylabel  ("# of people")
+    plt.show    ()
 
 make_friend_counts_histogram(num_friends)
 
@@ -32,19 +32,17 @@ def mean(x):
 print(mean(num_friends))
 
 def median(v):
-    """
-        Mid value of vector
-    """
-
+    """ Mid value of vector """
     n           = len(v)
     sorted_v    = sorted(v)
     mid_p       = n // 2
 
-    if(n % 2 == 1):
+    if          (n % 2 == 1):
       return    sorted_v[mid_p] 
     else:
         low     = mid_p-1
         high    = mid_p
-        return  (sorted_v(low) + sorted_v(high))  
+        return  (sorted_v[low] + sorted_v[high])*1.0 / 2  
 
-  
+print(median(num_friends))
+ 
