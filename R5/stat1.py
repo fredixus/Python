@@ -94,5 +94,14 @@ def variance(x):
 print(variance(num_friends))
 
 """
-
+Warto?? ta przypomina ?rednie odchylenie od ?redniej podniesione do kwadratu, 
+ale zamiast dzeili? przez n, dzielimy przez n - 1. 
+Tak naprawde podczas pracy z pr¢dk? du?ego zbioru danych x_bar jest tylko ESTYMAT? rzeczywistej ?redniej,
+a wi?c zwykle (x_i - x_bar **2 jest oszacowanym zbyt nisko kwadratem odchylenia od ?redniej - 
+to w?a?nie jest przyczyna tego, ?e dzielimy przez n - 1 a nie przez n). Ci??ko jest to zrozumie?, 
+a wi?c cz?sto zamiast z tego parametru b?dziemy korzysta? z odchylenia standardowego.
 """
+
+def standard_deviation(x):
+    return math.sqrt(variance(x))
+
