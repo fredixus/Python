@@ -71,3 +71,28 @@ def data_range(x):
     return max(x) - min(x)
 
 print(data_range(num_friends))
+
+def de_mean(x):
+    """Przekszta?ca x poprzez odj?cie ?redniej """
+    x_bar = mean(x)
+    return [x_i - x_bar for x_i in x] 
+
+def vector_dot(u,v):
+    return sum(v_i * u_i for v_i, u_i in zip(v,u))
+
+def sum_of_squers(v):
+    return vector_dot(v,v)
+
+def variance(x):
+    """Zak?ada ?e x ma przynajmniej dwa elementy"""
+    n = len(x) 
+    if n < 2: return -1
+    else:
+        deviation = de_mean(x)
+        return sum_of_squers(deviation) / (n - 1)
+
+print(variance(num_friends))
+
+"""
+
+"""
