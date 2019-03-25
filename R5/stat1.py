@@ -177,4 +177,4 @@ plt.xlabel  ("# of friends")
 plt.ylabel  ("# of daily_minutes")
 plt.show()
 
-
+print(correlation(num_friends_good, daily_minutes_good))
