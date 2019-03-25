@@ -1,0 +1,6 @@
+Wartość ta przypomina średnie odchylenie od średniej podniesione do kwadratu, 
+ale zamiast dzeilić przez n, dzielimy przez n - 1. 
+Tak naprawde podczas pracy z pródką dużego zbioru danych x_bar jest tylko ESTYMATĄ rzeczywistej średniej,
+a więc zwykle (x_i - x_bar **2 jest oszacowanym zbyt nisko kwadratem odchylenia od średniej - 
+to właśnie jest przyczyna tego, że dzielimy przez n - 1 a nie przez n). Ciężko jest to zrozumieć, 
+a więc często zamiast z tego parametru będziemy korzystać z odchylenia standardowego.

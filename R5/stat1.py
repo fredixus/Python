@@ -93,10 +93,6 @@ def variance(x):
 
 print(variance(num_friends))
 
-"""
-
-"""
-
 def standard_deviation(x):
     return math.sqrt(variance(x))
 
