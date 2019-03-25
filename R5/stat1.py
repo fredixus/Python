@@ -19,3 +19,8 @@ def make_friend_counts_histogram(num_friends):
     plt.show()
 
 make_friend_counts_histogram(num_friends)
+
+def mean(x):
+    return sum(x)/len(x)
+
+print(mean(num_friends))
