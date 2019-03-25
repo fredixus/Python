@@ -147,3 +147,20 @@ def correlation(x, y):
         return 0 # if no variation, correlation is zero
 
 print(correlation(num_friends, daily_minutes))
+
+"""
+Korelacja nie ma jednostek i przyjmuje wartości z zakresu 
+od -1 - pełna antykorelacja 
+do 1 - pełna korelacja
+0 brak jakichkolwiek korelacji
+"""
+
+outlier = num_friends.index(100) # index of outlier
+
+num_friends_good = [x 
+                    for i, x in enumerate(num_friends) 
+                    if i != outlier]
+
+daily_minutes_good = [x 
+                      for i, x in enumerate(daily_minutes) 
+                      if i != outlier]
