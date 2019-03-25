@@ -65,3 +65,9 @@ def mode(x):
             ]
 
 print(mode(num_friends))
+
+def data_range(x):
+    """Rozpietosc danych - dyspersja okresla zroznicowanie danych"""
+    return max(x) - min(x)
+
+print(data_range(num_friends))
