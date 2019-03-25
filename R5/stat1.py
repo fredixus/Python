@@ -57,4 +57,11 @@ print("Kwantyl 0.75: %s"    % quantile(num_friends,0.75))
 print("Decyl \t0.10: %s"    % quantile(num_friends,0.90))
 
 def mode(x):
-    """Dominanta - moda - wartość występująca najczęściej"""
+    """Dominanta - moda - wartosc wystepujaca najczesciej"""
+    counts      = Counter (x)
+    max_count   = max(counts.values())
+    return [x_i for x_i, count in counts.iteritems()
+            if count == max_count
+            ]
+
+print(mode(num_friends))
