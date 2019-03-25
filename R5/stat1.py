@@ -97,3 +97,8 @@ def standard_deviation(x):
     return math.sqrt(variance(x))
 
 print(standard_deviation(num_friends))
+
+def interquartile_range(x):
+    return quantile(x,0.75) - quantile(x,0.25)
+
+print(interquartile_range(num_friends))
