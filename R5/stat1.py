@@ -21,6 +21,6 @@ def make_friend_counts_histogram(num_friends):
 make_friend_counts_histogram(num_friends)
 
 def mean(x):
-    return sum(x)//len(x)
+    return sum(x)*1.0/len(x)
 
 print(mean(num_friends))
