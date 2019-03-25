@@ -164,3 +164,17 @@ num_friends_good = [x
 daily_minutes_good = [x 
                       for i, x in enumerate(daily_minutes) 
                       if i != outlier]
+
+plt.plot(num_friends ,daily_minutes,'ro')
+plt.title   ("Corelation with outlier - incorrect")
+plt.xlabel  ("# of friends")
+plt.ylabel  ("# of daily_minutes")
+plt.show()
+
+plt.plot(num_friends_good ,daily_minutes_good,'bo')
+plt.title   ("Corelation without outlier - correct")
+plt.xlabel  ("# of friends")
+plt.ylabel  ("# of daily_minutes")
+plt.show()
+
+
