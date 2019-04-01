@@ -73,7 +73,7 @@ def data_range(x):
 print(data_range(num_friends))
 
 def de_mean(x):
-    """Przekształca x poprzez odjęcie średniej """
+    """Przeksztalca x poprzez odjecie sredniej """
     x_bar = mean(x)
     return [x_i - x_bar for x_i in x] 
 
@@ -84,7 +84,7 @@ def sum_of_squers(v):
     return vector_dot(v,v)
 
 def variance(x):
-    """Zakłada że x ma przynajmniej dwa elementy"""
+    """Zaklada ze x ma przynajmniej dwa elementy"""
     n = len(x) 
     if n < 2: return -1
     else:
@@ -104,8 +104,8 @@ def interquartile_range(x):
 print(interquartile_range(num_friends))
 
 """
-Kowariancja mierzy jak dwie zmienne różnia się od swoich średnich
-Wariancja określa odchylenie pojedynczej zmiennej od średniej
+Kowariancja mierzy jak dwie zmienne roznia sie od swoich srednich
+Wariancja okresla odchylenie pojedynczej zmiennej od sredniej
 """
 daily_minutes = [1,68.77,51.25,52.08,38.36,44.54,57.13,51.4,
                 41.42,31.22,34.76,54.01,38.79,47.59,49.1,27.66,
@@ -149,9 +149,9 @@ def correlation(x, y):
 print(correlation(num_friends, daily_minutes))
 
 """
-Korelacja nie ma jednostek i przyjmuje wartości z zakresu 
-od -1 - pełna antykorelacja 
-do 1 - pełna korelacja
+Korelacja nie ma jednostek i przyjmuje wartosci z zakresu 
+od -1 - pelna antykorelacja 
+do 1 - pelna korelacja
 0 brak jakichkolwiek korelacji
 """
 
